@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Web Development Slides</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/theme/white.min.css">      
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <!-- Web Programming Basics -->
+            <section>
+                <h2>ECS 162 Final Exam Review</h2>
+                <p>Understanding the structure of web pages and their functioning</p>
+            </section>
+            <section>
+                <h3>Basic Components of a Web Page</h3>
+                <ul>
+                    <li>HTML for structure</li>
+                    <li>CSS for styling</li>
+                    <li>JavaScript for functionality</li>
+                </ul>
+                <p>The role of the Document Object Model (DOM) in dynamic content manipulation</p>
+                <p>Life cycle of a web page from load to unload, including parsing HTML, rendering CSS, and executing JavaScript</p>
+            </section>
+            <section>
+                <h3>Overview of Client-Server Architecture</h3>
+                <ul>
+                    <li>Definition and function of a client in a network, such as a web browser or dedicated app</li>
+                    <li>Role and operation of servers that host web resources and manage client requests</li>
+                    <li>How HTTP requests and responses facilitate communication between clients and servers</li>
+                    <li>Understanding stateless interaction and its implications for web development</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Basics of Web Development Tools and Environments</h3>
+                <ul>
+                    <li>Basics of version control systems, particularly Git, and their importance in managing changes and collaborating in web development projects</li>
+                    <li>Introduction to browser developer tools for debugging, performance analysis, and real-time editing</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Basics of a URL (Uniform Resource Locator)</h3>
+                <ul>
+                    <li>Structure and Components:
+                        <ul>
+                            <li>Scheme: Indicates the protocol used to access the resource (e.g., http, https, ftp)</li>
+                            <li>Domain: Specifies the domain name or IP address of the server hosting the resource</li>
+                            <li>Port: Optional component that specifies the port number on the server (defaults to 80 for HTTP and 443 for HTTPS if not specified)</li>
+                            <li>Path: The specific path on the server to the desired resource, often mapping to a file or a directory</li>
+                            <li>Query String: Optional component used to pass parameters or settings to the server as key-value pairs</li>
+                            <li>Fragment ID: Optional component used to navigate to a specific part of the resource, like a section within a web page</li>
+                        </ul>
+                    </li>
+                    <li>How URLs are used to locate and retrieve resources on the internet</li>
+                    <li>How browsers and servers use URLs to request and deliver content</li>
+                    <li>Importance of secure protocols like HTTPS in protecting the data integrity and privacy of the information exchanged via URLs</li>
+                </ul>
+            </section>
+
+            <!-- HTML -->
+            <section>
+                <h2>HTML</h2>
+                <p>Usage of Semantic HTML5 Elements</p>
+            </section>
+            <section>
+                <h3>Detailed Explanation and Usage</h3>
+                <ul>
+                    <li>&lt;header&gt;: Defines the introductory content or navigational links</li>
+                    <li>&lt;footer&gt;: Specifies the footer for a document or section, typically containing information like contact details or copyrights</li>
+                    <li>&lt;article&gt;: Represents a self-contained composition in a document, page, or site, which is intended to be independently distributable or reusable</li>
+                    <li>&lt;section&gt;: Defines sections in a document, such as chapters, headers, footers, or any other sections of the document</li>
+                </ul>
+                <p>Comparison with Non-Semantic Elements: Discuss the use of &lt;div&gt; and &lt;span&gt; for layout and styling where semantic meaning is not required</p>
+            </section>
+            <section>
+                <h3>Importance of Semantic Structuring for Accessibility and SEO</h3>
+                <ul>
+                    <li>Accessibility: How semantic elements support screen readers and assistive technologies in interpreting web content more effectively</li>
+                    <li>SEO Benefits: Importance of semantic tags for search engines in understanding content hierarchy and improving indexing</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Basic HTML Tags and Attributes</h3>
+                <ul>
+                    <li>Tags for Basic Structure:
+                        <ul>
+                            <li>&lt;p&gt; for paragraphs</li>
+                            <li>&lt;h1&gt; to &lt;h6&gt; for headings, emphasizing the use of headers for structuring content hierarchically</li>
+                        </ul>
+                    </li>
+                    <li>Block vs. Inline Elements: Explanation of block elements like &lt;div&gt; and &lt;p&gt; which typically start on a new line, versus inline elements like &lt;span&gt; and &lt;a&gt;, which do not</li>
+                    <li>Nesting of Elements: Proper nesting practices to maintain a logical and valid HTML structure</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Hyperlinks and Images</h3>
+                <ul>
+                    <li>Anchor Tags (&lt;a&gt;): Creating hyperlinks using &lt;a href="URL"&gt;, discussion of attributes like target for link behavior</li>
+                    <li>Image Tags (&lt;img&gt;): Correct use of &lt;img src="URL" alt="description"&gt; to embed images, emphasizing the importance of the alt attribute for accessibility</li>
+                    <li>Lists: Usage of &lt;ul&gt;, &lt;ol&gt;, and &lt;li&gt; for unordered and ordered lists</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Paths in HTML</h3>
+                <ul>
+                    <li>Alt-Text: Importance of describing images and other non-text content with alt text for accessibility and SEO</li>
+                    <li>Relative vs. Absolute Paths: Differences between relative paths (links to files within the same website) and absolute paths (links to files located on a different domain), and when to use each</li>
+                </ul>
+            </section>
+
+            <!-- CSS -->
+            <section>
+                <h2>CSS</h2>
+                <p>Understanding the CSS box model (margins, borders, padding, and content)</p>
+            </section>
+            <section>
+                <h3>Detailed Breakdown of Each Component of the Box Model</h3>
+                <ul>
+                    <li>Content: The area where text and images appear</li>
+                    <li>Padding: Clears an area around the content; the padding is transparent</li>
+                    <li>Border: Goes around the padding and content</li>
+                    <li>Margin: Clears an area outside the border; like padding, the margin is also transparent</li>
+                </ul>
+                <p>Explanation of how the box-sizing property affects the calculation of an element's total width and height:
+                    <ul>
+                        <li>content-box: Default setting where width and height only include the content</li>
+                        <li>border-box: Width and height include content, padding, and border, simplifying the design process especially in responsive layouts</li>
+                    </ul>
+                </p>
+            </section>
+            <section>
+                <h3>Responsive Design Principles and the Use of Media Queries</h3>
+                <ul>
+                    <li>Overview of responsive design as an approach to make web pages look good on all devices (desktops, tablets, and phones)</li>
+                    <li>Explanation of CSS media queries and how they allow content to adapt to different conditions like screen resolutions, orientations, and platforms</li>
+                    <li>Examples of typical media query syntax to target specific device characteristics, such as min-width, max-width, orientation (landscape or portrait), and resolution</li>
+                    <li>Discussing strategies for mobile-first design versus desktop-first design and their implications in responsive web development</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Flexbox for Layout Management</h3>
+                <ul>
+                    <li>Introduction to the Flexbox model as a one-dimensional layout method for arranging items linearly (either in rows or columns)</li>
+                    <li>Key properties of Flexbox such as flex-direction, justify-content, align-items, and flex-wrap, and how they control alignment, spacing, and the dynamic sizing of items</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Core Concepts of Styling and Visual Adjustments without Focusing on Memorizing All Properties</h3>
+                <ul>
+                    <li>Emphasis on understanding fundamental CSS properties that frequently impact layout and styling such as color, font-family, background, and opacity</li>
+                    <li>Discussion on the importance of learning how to effectively use CSS for visual aesthetics like shadows (box-shadow, text-shadow), transitions, and animations</li>
+                    <li>Encouragement to experiment with these properties in practice projects to develop a natural intuition for their effects rather than memorizing property values and syntax</li>
+                </ul>
+            </section>
+            <section>
+                <h3>The Cascade in CSS</h3>
+                <ul>
+                    <li>Definition and Function: Explanation of the cascade as a fundamental concept in CSS that determines how to apply competing styles to an element based on multiple style rules</li>
+                    <li>Factors Influencing the Cascade:
+                        <ul>
+                            <li>Specificity: Detailed discussion on how specificity determines which styles are applied when multiple rules target the same element, with examples illustrating how selectors of different weights (ID, class, type) influence the outcome</li>
+                            <li>Source Order: Description of how the order of CSS rules in a document plays a role in the cascade, where rules that appear later in the code typically override earlier rules unless overridden by higher specificity</li>
+                            <li>Inheritance: Overview of how some CSS properties are inherited by child elements from their parent elements, and how this affects the styling of nested elements within the HTML document</li>
+                        </ul>
+                    </li>
+                    <li>Importance in Web Design: Discuss the role of the cascade in maintaining a coherent visual style across a website, allowing for modular and scalable CSS architectures</li>
+                    <li>Best Practices: Recommendations for organizing CSS to make effective use of the cascade, such as structuring style sheets to minimize conflicts and using methodologies like BEM (Block, Element, Modifier) to enhance specificity management</li>
+                </ul>
+            </section>
+
+            <!-- JavaScript -->
+            <section>
+                <h2>JavaScript</h2>
+                <p>Basic JavaScript Syntax</p>
+            </section>
+            <section>
+                <h3>Fundamental Elements</h3>
+                <ul>
+                    <li>Variables and Data Types: Overview of declaring variables using var, let, and const, and the importance of understanding different data types like strings, numbers, booleans, objects, and arrays</li>
+                    <li>Operators: Discussion of arithmetic, comparison, logical, and assignment operators used to perform operations on variables and values</li>
+                    <li>Control Structures:
+                        <ul>
+                            <li>Conditional Statements: Explanation of if, else if, else, and switch cases for making decisions in code</li>
+                            <li>Loops: Detailed description of loops (for, while, and do...while) used for repeating actions until a condition changes</li>
+                        </ul>
+                    </li>
+                    <li>Functions:
+                        <ul>
+                            <li>Declaration and Invocation: How to define functions using function declarations and expressions, and how to invoke them</li>
+                            <li>Parameters and Return Values: Understanding how to pass information to functions via parameters and use return values to output data from functions</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <h3>Event Handling</h3>
+                <ul>
+                    <li>Adding Event Listeners: Use of addEventListener to handle user interactions such as clicks, mouse movements, and keyboard inputs</li>
+                    <li>Event Object: Explanation of accessing the event object in callbacks for more complex event handling</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Common Errors</h3>
+                <ul>
+                    <li>Syntax Errors: Identifying common syntax errors like missing semicolons, unmatched parentheses, or incorrect use of keywords</li>
+                    <li>Debugging Techniques: Brief introduction to debugging tools and techniques, such as console logging and using browser developer tools</li>
+                </ul>
+                <p>Best Practices: Recommendations for writing clean, readable, and maintainable JavaScript code, including proper naming conventions, code formatting, and commenting</p>
+            </section>
+            <section>
+                <h3>Role of JavaScript in Adding Interactivity to Web Pages</h3>
+                <ul>
+                    <li>Explanation of how JavaScript enables dynamic interactions on web pages, transforming static HTML into interactive experiences</li>
+                    <li>Discussion on typical uses of JavaScript such as form validation, interactive maps, dynamic styling, and content updates without page reloads</li>
+                    <li>Overview of how JavaScript can manipulate, validate, and enhance user interface elements in real-time, improving user engagement and satisfaction</li>
+                </ul>
+            </section>
+            <section>
+                <h3>DOM Manipulation: Concepts over Detailed Method Recall</h3>
+                <ul>
+                    <li>Understanding the relationship between the HTML document and the Document Object Model (DOM), which JavaScript uses to access and change the document's structure, style, and content</li>
+                    <li>Explanation of key concepts like selecting elements (getElementById, querySelector), modifying elements (changing text, attributes), and creating or removing elements</li>
+                    <li>Emphasis on recognizing how DOM methods are used to interact with web pages, with less focus on memorizing every method and more on understanding their applications</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Event Handling: Understanding Events and Basic User Interaction Management</h3>
+                <ul>
+                    <li>Detailed look at how JavaScript handles events such as mouse clicks, keyboard input, and form submissions</li>
+                    <li>Explanation of event listeners (addEventListener) and how they're used to bind actions to user interactions</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Asynchronous JavaScript: Usage of Promises and Async/Await for Handling Asynchronous Operations</h3>
+                <ul>
+                    <li>Introduction to the concept of asynchronous operations in JavaScript, which are crucial for performing tasks like fetching data from a server without blocking the main thread</li>
+                    <li>Detailed explanation of promises as containers for future values, and async/await syntax as a more readable and straightforward approach to working with asynchronous functions</li>
+                    <li>Examples of using promises and async/await to handle operations that require waiting for tasks to complete, such as API calls or time-intensive computations</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Basic Understanding of Timers and Callbacks without Delving into Complex Syntax</h3>
+                <ul>
+                    <li>Overview of JavaScript timers (setTimeout, setInterval) and their role in delaying or repeatedly executing functions</li>
+                    <li>Discussion of callbacks as functions passed into other functions to be executed later, typically used in timers, event handling, or asynchronous operations</li>
+                    <li>Emphasis on the importance of understanding when and why to use these features to add delays, schedule tasks, or handle operations that require waiting, without focusing on intricate syntax details</li>
+                </ul>
+            </section>
+
+            <!-- Integrating External Web Services -->
+            <section>
+                <h2>Integrating External Web Services</h2>
+                <p>Consuming RESTful APIs using JavaScript fetch for data retrieval and display</p>
+            </section>
+            <section>
+                <h3>Overview of RESTful APIs and Their Usage in Web Applications</h3>
+                <ul>
+                    <li>Basics of the fetch API in JavaScript</li>
+                    <li>How to make GET requests to retrieve data from an external API</li>
+                    <li>Handling API responses and converting them to JSON</li>
+                    <li>Displaying retrieved data dynamically on a web page</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Understanding JSON Format for Web Data Exchange</h3>
+                <ul>
+                    <li>Explanation of JSON (JavaScript Object Notation) and its syntax</li>
+                    <li>Comparison with XML as a data format</li>
+                    <li>How JSON is used for data exchange between client and server</li>
+                    <li>Parsing JSON data in JavaScript</li>
+                    <li>Creating JSON strings from JavaScript objects</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Basic Security Considerations when Interacting with APIs</h3>
+                <ul>
+                    <li>Importance of API security</li>
+                    <li>Understanding Cross-Origin Resource Sharing (CORS)</li>
+                    <li>Using API keys and tokens for authentication</li>
+                    <li>Basic strategies to protect API keys</li>
+                    <li>Handling sensitive data securely</li>
+                </ul>
+            </section>
+
+            <!-- Back-End Development with Node.js and Express -->
+            <section>
+                <h2>Back-End Development with Node.js and Express</h2>
+                <p>Creating JSON-based APIs using Node.js and the Express framework</p>
+            </section>
+            <section>
+                <h3>Introduction to Node.js and its Event-Driven, Non-Blocking I/O Model</h3>
+                <ul>
+                    <li>Setting up a basic Express server</li>
+                    <li>Creating routes for different API endpoints</li>
+                    <li>Responding with JSON data from the server</li>
+                    <li>Using middleware functions in Express</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Structuring Server-Side Code for Maintainability and Scalability</h3>
+                <ul>
+                    <li>Error handling and logging in Express applications</li>
+                    <li>Environment configuration using dotenv</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Implementing RESTful Service Principles in API Design</h3>
+                <ul>
+                    <li>Understanding REST (Representational State Transfer) principles</li>
+                    <li>Designing RESTful routes and endpoints</li>
+                    <li>HTTP methods (GET, POST) and their uses</li>
+                    <li>Using status codes to indicate the result of API requests</li>
+                    <li>Designing resource URIs and handling query parameters</li>
+                </ul>
+            </section>
+
+            <!-- Database Management and Application State -->
+            <section>
+                <h2>Database Management and Application State</h2>
+                <p>Storing and querying data with SQLite within server-side applications</p>
+            </section>
+            <section>
+                <h3>Introduction to SQLite as a Lightweight, File-Based Database</h3>
+                <ul>
+                    <li>Setting up SQLite in a Node.js project using sqlite3 or a similar library</li>
+                    <li>Basic SQL commands: CREATE, SELECT, INSERT, UPDATE, DELETE</li>
+                    <li>Interacting with the database from Node.js</li>
+                    <li>Handling database errors and asynchronous operations</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Techniques for Maintaining Application State on the Server</h3>
+                <ul>
+                    <li>Understanding the concept of application state</li>
+                    <li>Using sessions and cookies to maintain user state</li>
+                    <li>Storing state information in a database</li>
+                    <li>Best practices for managing session data securely</li>
+                    <li>Implementing state management in a stateless HTTP environment</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Introduction to Authentication Using OAuth with Services like Google</h3>
+                <ul>
+                    <li>Overview of OAuth and its purpose</li>
+                    <li>Understanding the OAuth flow: Authorization code grant</li>
+                    <li>Setting up OAuth with Google in a Node.js application</li>
+                    <li>Handling access tokens and refresh tokens</li>
+                    <li>Securing user authentication and handling user data</li>
+                </ul>
+            </section>
+
+            <!-- Introduction to React and Basic Web Security -->
+            <section>
+                <h2>Introduction to React and Basic Web Security</h2>
+                <p>Basics of React for building single-page applications (SPAs)</p>
+            </section>
+            <section>
+                <h3>Introduction to React and Its Component-Based Architecture</h3>
+                <ul>
+                    <li>Creating and rendering React components</li>
+                    <li>JSX syntax and its benefits</li>
+                    <li>Managing component state with useState hook</li>
+                    <li>Handling user inputs and events in React</li>
+                </ul>
+            </section>
+            <section>
+                <h3>State Management and Component Lifecycle in React</h3>
+                <ul>
+                    <li>Understanding component lifecycle methods</li>
+                    <li>Using useEffect hook for side effects and data fetching</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Implementing User Authentication and Understanding HTTPS and Cross-Site Request Forgery (CSRF) Protection Basics</h3>
+                <ul>
+                    <li>Importance of HTTPS and securing web traffic</li>
+                    <li>CSRF attacks and protective measures</li>
+                    <li>Best practices for secure user authentication and session management</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.4.0/reveal.min.js"></script>
+    <script>
+    Reveal.initialize({
+        width: 1200,
+        height: 900,
+        margin: 0.1,
+        minScale: 0.2,
+        maxScale: 1.5
+    });    </script>
+</body>
+</html>
